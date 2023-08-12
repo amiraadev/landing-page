@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ 
+  body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+  }
+
+  .hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-img img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #8a7564;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+  }
+
+  .nav-items {
+    flex:1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-items:first-child {
+     margin-right:auto;
+  }
+  .nav-items:last-child {
+     margin-left:auto;
+  }
+
+  .nav-items .nav-item {
+    padding: 2em;
+  }
+
+  .nav-item a {
+      text-decoration:none;
+      text-transform:uppercase;
+      font-family:"Neue Montreal";
+      font-size: 12px;
+      color:#000;
+  }
+  .nav-item a#logo {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing:0.2em ;
+  }
+
+  .cols{
+    width: 100%;
+    display: flex;
+  }
+
+  .column{
+    width: 50%;
+    height: 100vh;
+  }
+
+.col-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Dahlia";
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 3em 2em 2em 2em;
+}
+
+.col-right .header{
+    position: absolute;
+}
+.col-left{
+  position: relative;
+  left: 0;
+  background: #d5bdaf;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 2em 2em 2em;
+}
+
+
+
+.copy{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  font-family: "Neue Montreal";
+}
+.copy > * {
+  position: relative;
+}
+
+.col-left .header{
+    text-transform: uppercase;
+    font-size: 24px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0.2em o.4em;
+    margin:1em 0;
+}
+
+.sub-header{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+  .image-wrapper {
+    width: 300px;
+    height: 300px;
+    background: #d5bdaf;
+    margin:2em 0;
+  }
+
+  .image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin:2em 0;
+  }
+
+  .info{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(60,60,60);
+    margin-bottom: 4em;
+  }
+  .footer{
+    display: flex;
+  }
+
+  .footer-item{
+    padding: 0 1em;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  @media(max-width:900px) {
+    body, .container {
+      height: 100%;
+      overflow: auto;
+    }
+    .hero-img{
+      top:100vh;
+    }
+    .cols{
+      flex-direction: column;
+    }
+    .column{
+      width: 100%;
+    }
+
+    .nav-items:first-child,
+    .nav-items:last-child{
+      display: none;
+    }
+
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .loader-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #8a7564;
+  }
+
+  .loader-text{
+    font-family: "Neue Montreal";
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #fff;
+  }
+
+  .loader-text .letter {
+    display: inline-block;
+    line-height: 1em;
+
+  }
+
+  .revealer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background: #875447;
+  }
+
+  
+
+  .pre-loader {
+    /* position: absolute; */
+    position: relative;
+    top: 0;
+    left:0;
+    background: #fff;
+
+  }
+
+.loader-wrapper{
+  position: relative;
+  width: 10px;
+  height: 140px;
+  background: rgb(240,240,240);
+  border-radius: 4px;
+  overflow: hidden;
+  transform: rotate(45deg);
+
+}
+
+.loader{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: rgb(251,0,255);
+  background: linear-gradient(100deg,rgba(251,0,255,1) 0%,rgba(253,29,29,1) 100%);
+}
